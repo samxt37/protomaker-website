@@ -5,9 +5,9 @@ import ProductCard from '../products/ProductCard';
 import { PRODUCTS, CATEGORIES, CATEGORY_LABELS } from '../../data/products';
 
 const CAT_IMAGES = {
-  'phone-accessories': '/assets/images/categories/cat-phone-accessories.jpg',
-  keyrings: '/assets/images/categories/cat-keyrings.jpg',
-  'other-3d-products': '/assets/images/categories/cat-other-3d.jpg',
+  'phone-accessories': `${import.meta.env.BASE_URL}assets/images/categories/cat-phone-accessories.jpg`,
+  keyrings: `${import.meta.env.BASE_URL}assets/images/categories/cat-keyrings.jpg`,
+  'other-3d-products': `${import.meta.env.BASE_URL}assets/images/categories/cat-other-3d.jpg`,
 };
 
 /**
@@ -40,7 +40,7 @@ export default function CategoryMatrix() {
                 <div className="cat-col-products">
                   {items.map((p) => (
                     <ProductCard key={p.id} product={p} />
-                  ))}
+                  ))}  
                 </div>
                 <Link to={`/products?cat=${cat}`} className="cat-col-view-all">
                   {t.categories.viewAll}

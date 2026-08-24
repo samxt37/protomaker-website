@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className="hero" data-component="hero">
       <div className="hero-bg" aria-hidden="true">
-        <img src="/assets/images/hero/hero-3d-printer.jpg" alt="" />
+        <img src={`${import.meta.env.BASE_URL}assets/images/hero/hero-3d-printer.jpg`} alt="" />
       </div>
       <div className="hero-inner">
         <p className="eyebrow">{t.hero.eyebrow}</p>

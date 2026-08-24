@@ -68,7 +68,7 @@ export default function ProductCard({ product }) {
         onTouchStart={hasSlider ? onTouchStart : undefined}
         onTouchEnd={hasSlider ? onTouchEnd : undefined}
       >
-        {current ? <img src={current} alt={name} loading="lazy" /> : null}
+        {current ? <img src={`${import.meta.env.BASE_URL}${current}`} alt={name} loading="lazy" /> : null}
         <span className="product-tag">{categoryLabel}</span>
         {badgeLabel ? <span className="product-badge">{badgeLabel}</span> : null}
 
