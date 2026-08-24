@@ -3,7 +3,7 @@ import { MessageCircle, ArrowDown } from 'lucide-react';
 import { useI18n } from '../../i18n/LanguageContext';
 
 /**
- * First-viewport hook: dark hero with 3D-printing video background + WhatsApp CTA.
+ * First-viewport hook: dark hero with 3D printer background + WhatsApp CTA.
  */
 export default function Hero() {
   const { t, wa } = useI18n();
@@ -11,16 +11,7 @@ export default function Hero() {
   return (
     <section className="hero" data-component="hero">
       <div className="hero-bg" aria-hidden="true">
-        <video
-          className="hero-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/assets/images/hero/hero-tech.jpg"
-        >
-          <source src="/assets/videos/hero-3d-print.mp4" type="video/mp4" />
-        </video>
+        <img src="/assets/images/hero/hero-3d-printer.jpg" alt="" />
       </div>
       <div className="hero-inner">
         <p className="eyebrow">{t.hero.eyebrow}</p>
