@@ -1,0 +1,5 @@
+
+- name: Upload artifact
+  uses: actions/upload-pages-artifact@v3
+  with:
+    path: ‘./dist’ # Ensure this points to your actual build output folder
