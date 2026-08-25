@@ -1225,3 +1225,21 @@ button {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media (max-width: 639px) {
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px var(--space-gutter);
+  }
+  .header-nav {
+    margin-inline-start: 0;
+    margin-top: 8px;
+    width: 100%;
+    justify-content: center;
+  }
+  .lang-switcher,
+  .wa-btn,
+  .social-link {
+    margin-top: 8px;
+  }
+}
