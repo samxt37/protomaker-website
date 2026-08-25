@@ -336,6 +336,39 @@ button {
   letter-spacing: 0.14em;
 }
 
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(26, 29, 32, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 12px var(--space-gutter);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-name {
+  font-family: var(--font-technical);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
 .header-nav {
   display: flex;
   gap: 4px;
@@ -388,8 +421,24 @@ button {
 }
 
 .lang-btn.is-active {
-  background: var(--accent);
-  color: var(--bg-primary);
+   background: var(--accent);
+   color: var(--bg-primary);
+ }
+
+/* ---------- Social links ---------- */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--text-muted);
+  transition: color var(--duration-fast) var(--ease-industrial);
+  border-radius: var(--radius-action);
+}
+
+.social-link:hover {
+  color: var(--accent);
 }
 
 /* ---------- Hero ---------- */
@@ -1120,6 +1169,59 @@ button {
   }
 
   .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- News Page ---------- */
+.news-page {
+  padding: 80px var(--space-gutter) 110px;
+}
+
+.news-grid {
+  display: grid;
+  gap: 28px;
+  margin-top: 28px;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-action);
+  padding: 20px;
+}
+
+.news-date {
+  font-family: var(--font-technical);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.news-title {
+  font-size: 1.05rem;
+  font-family: var(--font-technical);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.news-text {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .news-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }

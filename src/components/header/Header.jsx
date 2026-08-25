@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Instagram } from 'lucide-react';
 import { useI18n } from '../../i18n/LanguageContext';
 import { LANGS } from '../../data/translations';
 import Logo from '../common/Logo';
@@ -21,6 +21,9 @@ export default function Header() {
         <nav className="header-nav" aria-label="Main">
           <NavLink to="/products" className={({ isActive }) => `nav-link${isActive ? ' is-active' : ''}`}>
             {t.nav.products}
+          </NavLink>
+          <NavLink to="/news" className={({ isActive }) => `nav-link${isActive ? ' is-active' : ''}`}>
+            {t.nav.news}
           </NavLink>
           <a href="#faq" className="nav-link nav-link-faq">
             {t.nav.faq}
@@ -49,6 +52,16 @@ export default function Header() {
         >
           <MessageCircle size={15} strokeWidth={1.8} aria-hidden="true" />
           <span>{t.nav.order}</span>
+        </a>
+
+        <a
+          href="https://www.instagram.com/protomaker_/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link"
+          aria-label="Instagram"
+        >
+          <Instagram size={20} strokeWidth={1.8} aria-hidden="true" />
         </a>
       </div>
     </header>

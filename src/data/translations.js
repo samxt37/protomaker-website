@@ -5,7 +5,7 @@ export const translations = {
     metaTitle: 'Protomaker — Custom 3D-Printed Accessories',
     metaDescription:
       'PC stands, phone & tablet stands, personalized keyrings, bag tags and 3D-printed accessories. Fixed prices, printed on demand, ordered in one WhatsApp message.',
-    nav: { products: 'Products', faq: 'FAQ', order: 'Order' },
+    nav: { products: 'Products', faq: 'FAQ', order: 'Order', news: 'News' },
     hero: {
       eyebrow: 'Custom 3D printing · made to order',
       titleA: 'PRINTED',
@@ -92,6 +92,10 @@ export const translations = {
       button: 'Start your order',
       phone: '+213 654259348',
     },
+    news: {
+      heading: 'News & Updates',
+      sub: 'Stay informed about our latest products and developments',
+    },
     footer: {
       tagline: 'Custom 3D-printed accessories, made to order.',
       linksHeading: 'Explore',
@@ -112,7 +116,7 @@ export const translations = {
     metaTitle: 'Protomaker — Accessoires personnalisés imprimés en 3D',
     metaDescription:
       'Supports PC, supports téléphone & tablette, porte-clés personnalisés, étiquettes de sac et accessoires imprimés en 3D. Prix fixes, sur commande, en un message WhatsApp.',
-    nav: { products: 'Produits', faq: 'FAQ', order: 'Commander' },
+    nav: { products: 'Produits', faq: 'FAQ', order: 'Commander', news: 'Actualités' },
     hero: {
       eyebrow: 'Impression 3D sur mesure · sur commande',
       titleA: 'IMPRIMÉ',
@@ -199,6 +203,10 @@ export const translations = {
       button: 'Commencer ma commande',
       phone: '+213 654259348',
     },
+    news: {
+      heading: 'Nouvelles & Mises à jour',
+      sub: 'Restez informé de nos derniers produits et développements',
+    },
     footer: {
       tagline: 'Accessoires personnalisés imprimés en 3D, sur commande.',
       linksHeading: 'Explorer',
@@ -219,7 +227,7 @@ export const translations = {
     metaTitle: 'بروتوميكر — إكسسوارات مخصصة مطبوعة ثلاثية الأبعاد',
     metaDescription:
       'حوامل كمبيوتر وهاتف وجهاز لوحي، سلاسل مفاتيح مخصصة، بطاقات حقائب وإكسسوارات مطبوعة ثلاثية الأبعاد. أسعار ثابتة، تُطبع عند الطلب، تُطلب برسالة واتساب واحدة.',
-    nav: { products: 'المنتجات', faq: 'الأسئلة', order: 'اطلب' },
+    nav: { products: 'المنتجات', faq: 'الأسئلة', order: 'اطلب', news: 'الأخبار' },
     hero: {
       eyebrow: 'طباعة ثلاثية الأبعاد مخصصة · حسب الطلب',
       titleA: 'مُطبوع',
@@ -305,6 +313,10 @@ export const translations = {
       text: 'أرسل لنا رسالة — نرد بسرعة وبشكل شخصي.',
       button: 'ابدأ طلبك',
       phone: '+213 654259348',
+    },
+    news: {
+      heading: 'الأخبار والتحديثات',
+      sub: 'ابقَ على اطلاع بأحدث منتجاتنا وتطوراتنا',
     },
     footer: {
       tagline: 'إكسسوارات مخصصة مطبوعة ثلاثية الأبعاد، حسب الطلب.',

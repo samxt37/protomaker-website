@@ -11,8 +11,19 @@ export function LanguageProvider({ children }) {
     document.documentElement.lang = lang;
     document.documentElement.dir = t.dir;
     document.title = t.metaTitle;
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute('content', t.metaDescription);
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', t.metaDescription);
+
+    // Open Graph
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', t.metaTitle);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', t.metaDescription);
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale) {
+      const localeMap = { en: 'en_US', fr: 'fr_FR', ar: 'ar_EG' };
+      ogLocale.setAttribute('content', localeMap[lang] || 'en_US');
+    }
   }, [lang, t]);
 
   const wa = (message) =>
