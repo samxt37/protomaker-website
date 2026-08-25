@@ -1,5 +1,5 @@
 import { useI18n } from '../i18n/LanguageContext';
-import SectionHeading from '../common/SectionHeading';
+import SectionHeading from '../components/common/SectionHeading';
 
 export default function NewsPage() {
   const { t } = useI18n();
